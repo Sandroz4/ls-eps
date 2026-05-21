@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar({ page, setPage }) {
   const navItems = [
@@ -8,13 +8,26 @@ export default function Navbar({ page, setPage }) {
     { id: "grammar", label: "გრამატიკა" },
   ];
 
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="nav">
-      <div className="nav-logo" onClick={() => setPage("home")}>
+      <div className="nav-logo" onClick={() => { setPage("home"); setOpen(false); }}>
         <div className="nav-logo-dot" />
         ls -&
       </div>
-      <div className="nav-links">
+
+      <button
+        className={`nav-toggle ${open ? "open" : ""}`}
+        aria-label="Toggle navigation"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      <div className={`nav-links ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
         {navItems.map((n) => (
           <button
             key={n.id}
@@ -25,6 +38,7 @@ export default function Navbar({ page, setPage }) {
           </button>
         ))}
       </div>
+
       <div className="nav-tag">TCS / 2026</div>
     </nav>
   );
