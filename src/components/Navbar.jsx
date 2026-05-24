@@ -12,10 +12,17 @@ export default function Navbar({ page, setPage }) {
 
   return (
     <nav className="nav">
-      <div className="nav-logo" onClick={() => { setPage("home"); setOpen(false); }}>
-        <div className="nav-logo-dot" />
-        ls -&
-      </div>
+    <div className="nav-logo" onClick={() => { setPage("home"); setOpen(false); }}>
+      <span style={{
+        fontFamily: "var(--serif)",
+        fontSize: "22px",
+        letterSpacing: "0.02em",
+        lineHeight: 1,
+      }}>
+        <span style={{ color: "var(--text)", fontStyle: "italic" }}>ls</span>
+        <span style={{ color: "var(--cyan)", fontStyle: "italic" }}> -ℰ</span>
+      </span>
+    </div>
 
       <button
         className={`nav-toggle ${open ? "open" : ""}`}
@@ -39,7 +46,7 @@ export default function Navbar({ page, setPage }) {
         ))}
       </div>
 
-      <div className="nav-tag">TCS / 2026</div>
+      <div className="nav-tag">2026</div>
     </nav>
   );
 }

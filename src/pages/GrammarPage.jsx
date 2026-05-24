@@ -362,7 +362,6 @@ export default function GrammarPage() {
   return (
     <div className="page">
       <div className="page-header">
-        <div className="page-eyebrow">მოდული 03</div>
         <h1 className="page-title">Grammar <em>Workbench</em></h1>
         <p className="page-desc">
           კონტექსტ-თავისუფალი გრამატიკების კვლევა: სტრიქონების გენერაცია, პარსინგის ხის აგება და სტრუქტურის ანალიზი.
@@ -416,7 +415,7 @@ export default function GrammarPage() {
               />
 
               <div className="flex gap-8" style={{ marginTop: 12, alignItems: "center" }}>
-                <span style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--text-mute)", letterSpacing: "0.08em" }}>სიღრმე</span>
+                <span style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--text-mute)", letterSpacing: "0.08em" }}>დონე</span>
                 <input
                   type="range" min={1} max={6} value={depth}
                   onChange={(e) => setDepth(+e.target.value)}
@@ -534,7 +533,7 @@ export default function GrammarPage() {
                   ))}
                 </div>
                 <div style={{ marginTop: 12, fontFamily: "var(--mono)", fontSize: 11, color: "var(--text-mute)" }}>
-                  {generated.length} სტრიქონი გენერირდა სიღრმით {depth}
+                  {generated.length} სტრიქონი გენერირდა დონით {depth}
                 </div>
               </div>
             </div>

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
 
+@font-face {
+  font-family: 'ALKSanetCustom';
+
+  src: url('../fonts/alk-sanet.ttf') format('truetype');
+
+  unicode-range: U+10A0-10FF, U+2D00-2D2F, U+1C90-1CBF;
+}
+
 *, *::before, *::after { 
   box-sizing: border-box; 
   margin: 0; 
@@ -21,15 +29,15 @@
   --text-dim:  #7a9acc;
   --text-mute: #3d5a8a;
   --accent:    #ff6b35;
-  --mono: 'Space Mono', monospace;
-  --sans: 'DM Sans', sans-serif;
-  --serif: 'Instrument Serif', serif;
+  --mono: 'ALKSanetCustom', 'Space Mono', monospace;
+  --sans: 'ALKSanetCustom', 'DM Sans', sans-serif;
+  --serif: 'ALKSanetCustom', 'Instrument Serif', serif;
 }
 
 html, body { 
   height: 100%; 
   background: var(--bg); 
-  color: var(--text); 
+  color: var(--text);
 }
 
 .app { 
@@ -328,12 +336,22 @@ html, body {
 .mb-16 { margin-bottom: 16px; }
 .mb-20 { margin-bottom: 20px; }
 
+.resolution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
 /* ── RESPONSIVE BREAKPOINTS ── */
 @media (max-width: 900px) {
   .hero-cards { grid-template-columns: 1fr; }
   .page { padding: 84px 20px 40px; }
   .hero { padding: 120px 20px 40px; }
-  .automata-grid, .logic-grid, .grammar-grid, .grammar-grid { grid-template-columns: 1fr; }
+  .automata-grid, .logic-grid, .grammar-grid, .grammar-grid { grid-template-columns: 1fr; 
+  }
+  /* Resolution section grid */
+  .resolution-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
