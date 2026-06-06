@@ -6,7 +6,6 @@ export default function ArithmeticResult({ targetStr, exprResult }) {
   return (
     <div className="panel mb-16">
       <div className="panel-header">
-        <span className="panel-dot" style={{ backgroundColor: "var(--blue)" }} />
         <span className="panel-title">გამოთვლის შედეგი</span>
       </div>
       <div className="panel-body" style={{ display: "flex", alignItems: "center", gap: 16 }}>

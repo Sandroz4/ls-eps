@@ -14,7 +14,7 @@ export default function ResolutionSection() {
   return (
     <div>
       <div className="panel mb-20">
-        <div className="panel-header"><span className="panel-dot" /><span className="panel-title">მაგალითები</span></div>
+        <div className="panel-header"><span className="panel-title">მაგალითები</span></div>
         <div className="panel-body">
           <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
             {PRESET_LABELS.map((label, i) => (
@@ -28,7 +28,7 @@ export default function ResolutionSection() {
 
       <div className="resolution-grid" style={{ display: "grid", gap: 16, marginBottom: 16 }}>
         <div className="panel">
-          <div className="panel-header"><span className="panel-dot" /><span className="panel-title">ახალი კლაუზა</span></div>
+          <div className="panel-header"><span className="panel-title">ახალი კლაუზა</span></div>
           <div className="panel-body">
             <div className="flex gap-8 mb-12">
               <input
@@ -51,7 +51,7 @@ export default function ResolutionSection() {
         </div>
 
         <div className="panel">
-          <div className="panel-header"><span className="panel-dot" /><span className="panel-title">კლაუზების სიმრავლე S</span></div>
+          <div className="panel-header"><span className="panel-title">კლაუზების სიმრავლე S</span></div>
           <div className="panel-body">
             {clauses.length === 0 ? (
               <div style={{ fontSize: 11, color: "var(--text-mute)", padding: "8px 0" }}>კლაუზები ჯერ არ დამატებულა</div>

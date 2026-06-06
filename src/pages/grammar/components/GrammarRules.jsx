@@ -4,7 +4,6 @@ export default function GrammarRules({ grammar }) {
   return (
     <div className="panel">
       <div className="panel-header">
-        <span className="panel-dot" />
         <span className="panel-title">აქტიური წესები</span>
       </div>
       <div className="panel-body">

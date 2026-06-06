@@ -16,7 +16,6 @@ export default function GrammarEditor({
   return (
     <div className="panel mb-16">
       <div className="panel-header">
-        <span className="panel-dot" />
         <span className="panel-title">გრამატიკის რედაქტორი</span>
       </div>
       <div className="panel-body">

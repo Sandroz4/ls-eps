@@ -49,7 +49,6 @@ export default function ParseTree({ tree, targetStr }) {
   return (
     <div className="panel mb-16">
       <div className="panel-header">
-        <span className="panel-dot" />
         <span className="panel-title">პარსინგის ხე — &ldquo;{targetStr}&rdquo;</span>
       </div>
       <div className="panel-body" style={{ overflowX: "auto", overflowY: "auto" }}>

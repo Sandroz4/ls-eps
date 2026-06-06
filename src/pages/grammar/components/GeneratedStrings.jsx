@@ -6,7 +6,6 @@ export default function GeneratedStrings({ generated, depth, setTargetStr }) {
   return (
     <div className="panel mb-16">
       <div className="panel-header">
-        <span className="panel-dot" />
         <span className="panel-title">გენერირებული სტრიქონები</span>
       </div>
       <div className="panel-body">
