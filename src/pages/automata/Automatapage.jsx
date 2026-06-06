@@ -108,7 +108,6 @@ export default function AutomataPage() {
         <div>
           <div className="panel">
             <div className="panel-header">
-              <span className="panel-dot" />
               <span className="panel-title">{automaton.label} კონფიგურაცია</span>
             </div>
             <div className="panel-body">
@@ -204,7 +203,6 @@ export default function AutomataPage() {
         <div>
           <div className="panel">
             <div className="panel-header">
-              <span className="panel-dot" />
               <span className="panel-title">მდგომარეობათა დიაგრამა</span>
             </div>
             <div className="panel-body" style={{ padding: 12 }}>
@@ -216,7 +214,6 @@ export default function AutomataPage() {
           {selectedId === "pda" && path.length > 0 && currentStep >= 0 && (
             <div className="panel" style={{ marginTop: 12 }}>
               <div className="panel-header">
-                <span className="panel-dot" />
                 <span className="panel-title">სტეკი (Stack)</span>
               </div>
               <div className="panel-body">
@@ -247,7 +244,6 @@ export default function AutomataPage() {
           {/* Computation path */}
           <div className="panel" style={{ marginTop: 12 }}>
             <div className="panel-header">
-              <span className="panel-dot" />
               <span className="panel-title">გამოთვლის მარშრუტი</span>
             </div>
             <div className="panel-body">

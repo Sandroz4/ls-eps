@@ -6,7 +6,6 @@ export default function DerivationSteps({ derivationSteps }) {
   return (
     <div className="panel">
       <div className="panel-header">
-        <span className="panel-dot" style={{ backgroundColor: "var(--blue)" }} />
         <span className="panel-title">გამოთვლის ნაბიჯები</span>
       </div>
       <div className="panel-body" style={{ fontFamily: "var(--mono)", fontSize: "12px", maxHeight: "240px", overflowY: "auto" }}>
