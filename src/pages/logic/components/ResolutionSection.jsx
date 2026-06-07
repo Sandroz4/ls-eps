@@ -3,7 +3,7 @@ import { useResolution } from "../useResolution";
 import { clauseStr } from "../logicUtils";
 import ResolutionTreeSVG from "./ResolutionTreeSVG";
 
-const PRESET_LABELS = ["¬P∨Q, ¬Q, P → ⊥", "P(a), ¬P(x)∨Q(x)", "¬P∨Q∨R, ¬Q∨S, …", "სატყუარა (satisfiable)"];
+const PRESET_LABELS = ["¬P∨Q, ¬Q, P → ⊥", "P(a), ¬P(x)∨Q(x)", "¬P∨Q∨R, ¬Q∨S, …", "satisfiable (ნიმუში)"];
 
 export default function ResolutionSection() {
   const {
